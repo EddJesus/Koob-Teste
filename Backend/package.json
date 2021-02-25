@@ -1,0 +1,30 @@
+{
+  "name": "koobteste",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "start": "ts-node-dev --respawn --transpile-only --poll src/server.ts --ignore-watch node_modules",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EddJesus/Koob-Teste.git"
+  },
+  "author": "Eduardo de Jesus Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EddJesus/Koob-Teste/issues"
+  },
+  "homepage": "https://github.com/EddJesus/Koob-Teste#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "ts-node-dev": "^1.1.2"
+  }
+}

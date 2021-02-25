@@ -1,0 +1,15 @@
+FROM node:latest
+
+RUN mkdir -p /usr/app/
+
+WORKDIR /usr/app/
+
+COPY package*.json /usr/app/
+
+RUN npm install ts-node-dev --save
+
+RUN npm install
+
+EXPOSE 3000
+
+CMD ["sudo","npm","start"]
