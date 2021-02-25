@@ -1,5 +1,6 @@
 import app from './app';
+import env from './config/connection';
 
-app.listen(3333, () => {
-  console.log("servidor rodando na porta 3333");
+app.listen(env.connection.PORT, env.connection.HOST, () => {
+  console.log("servidor rodando na porta " + env.connection.PORT);
 })

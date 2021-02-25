@@ -1,9 +1,10 @@
 import { Router } from 'express';
-
 const routes = Router();
 
-routes.get('/', (req, res) =>{
-  res.status(200).json({message: "hello world"})
-})
+import StudentController from './controllers/StudentController';
+
+// Rota students
+routes.post('/students', StudentController.createStudent);
+routes.get('/students', StudentController.index);
 
 export default routes;
