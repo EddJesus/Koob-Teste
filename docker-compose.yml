@@ -52,7 +52,7 @@ services:
       - MYSQL_DB=koobdb
     container_name: mysql_koob
     ports:
-      - "3306:3306"
+      - "3307:3307"
 
 networks:
   koob_net:

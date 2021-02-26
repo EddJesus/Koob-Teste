@@ -4,13 +4,16 @@ RUN mkdir -p /usr/app/
 
 WORKDIR /usr/app/
 
+
 COPY package*.json /usr/app/
 
 ENV PATH /src/app/node_modules/.bin:$PATH
 
 RUN npm install create-react-app --save
 RUN npm install react-scripts --save
-RUN npm install
+RUN npm install --unsafe-perm=true --allow-root
+
+RUN chmod 777 /usr/app/node_modules
 
 EXPOSE 3002
 
