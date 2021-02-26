@@ -1,11 +1,15 @@
-import React from 'react';
+import React from "react";
+import Router from './routes'
 import './App.css';
+import {UserProvider} from './context/userContext'
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <h1>hello world!</h1>
-    </div>
+    <>
+    <UserProvider>
+      <Router/>
+    </UserProvider>
+    </>
   );
 }
 

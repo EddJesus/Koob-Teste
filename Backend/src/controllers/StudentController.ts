@@ -22,7 +22,7 @@ export default {
         schedule: data.schedule,
       })
 
-      res.status(200).json("Estudante criado com sucesso!");
+      res.status(201).json("Estudante criado com sucesso!");
 
     } catch (error) {
       console.log(error);

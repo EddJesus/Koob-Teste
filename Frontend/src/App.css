@@ -1,13 +1,18 @@
 :root{
+  height: 100%!important;
   margin: 0 0 0 0;
 }
 
 html{
+  height: 100%;
   margin: 0 0 0 0;
+  background-color: #7e0083;
 }
 
 body{
+  height: 100%;
   margin: 0 0 0 0;
+  background-color: #7e0083;
 }
 
 button:focus{
@@ -25,4 +30,14 @@ input:focus{
 ul li{
   list-style: none;
   text-decoration: none;
+}
+
+a{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
