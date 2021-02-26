@@ -27,6 +27,8 @@ obs: *Necessário ter docker instalado na sua máquina
 - Crie um arquivo '.env' com as configurações mostradas em '.env-example'
 - Digite 'sudo docker-compose up' para criação do projeto
 - Digite 'sudo docker exec -it mysql bash'
+- Digite 'mysql -h localhost -u root -p' e coloque a senha 'eduardo123'
+- Crie um banco de dados com o comando 'CREATE DATABASE koobdb'
 - Digite 'sudo docker exec -it koob_backend bash' e rode um 'npx knex migrate:latest' para poder subir as tabelas para o banco de dados
 - Acesse o endereço "localhost:3002" e utilize.
 
